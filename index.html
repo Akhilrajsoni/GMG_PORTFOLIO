@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GMG Software Solution — Custom Software for Real Businesses</title>
+  <meta name="description" content="GMG Software Solution builds custom SaaS applications, logistics tools, and Google Workspace automations. Based in India.">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<!-- PAGE TRANSITION OVERLAY -->
+<div id="transition-overlay">
+  <div class="t-panel"></div>
+  <div class="t-panel"></div>
+  <div class="t-panel"></div>
+  <div class="t-panel"></div>
+  <div class="t-panel"></div>
+</div>
+
+<!-- CURSOR GLOW -->
+<div id="cursor-glow"></div>
+
+<!-- ══════════════ NAVIGATION ══════════════ -->
+<nav id="nav">
+  <div class="nav-inner" style="padding: 0 clamp(20px,4vw,60px);">
+    <a href="#" class="nav-logo" data-page="home">
+      <svg class="nav-logo-icon" viewBox="0 0 40 40" fill="none">
+        <defs>
+          <linearGradient id="nlt" x1="0" y1="40" x2="20" y2="0"><stop stop-color="#1d4ed8"/><stop offset="1" stop-color="#60a5fa"/></linearGradient>
+          <linearGradient id="nrt" x1="40" y1="40" x2="20" y2="0"><stop stop-color="#5b21b6"/><stop offset="1" stop-color="#a78bfa"/></linearGradient>
+        </defs>
+        <polygon points="20,4 20,22 4,34" fill="url(#nlt)"/>
+        <polygon points="20,4 36,34 20,22" fill="url(#nrt)"/>
+        <polygon points="20,22 36,34 4,34" fill="#475569" opacity="0.55"/>
+        <circle cx="20" cy="22" r="2.8" fill="white" opacity="0.95"/>
+      </svg>
+      <div>
+        <span>GMG</span>
+        <span class="logo-sub">Software Solution</span>
+      </div>
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="#" data-page="home" class="nav-link active">Home</a></li>
+      <li><a href="#" data-page="services" class="nav-link">Services</a></li>
+      <li><a href="#" data-page="work" class="nav-link">Our Work</a></li>
+      <li><a href="#" data-page="pricing" class="nav-link">Pricing</a></li>
+      <li><a href="#" data-page="contact" class="nav-link">Contact</a></li>
+    </ul>
+
+    <a href="#" data-page="contact" class="nav-cta">Get a Quote</a>
+
+    <button class="nav-hamburger" id="hamburgerBtn" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- MOBILE FULL MENU -->
+<div id="mobileMenu">
+  <a href="#" data-page="home" class="mob-link">Home</a>
+  <a href="#" data-page="services" class="mob-link">Services</a>
+  <a href="#" data-page="work" class="mob-link">Our Work</a>
+  <a href="#" data-page="pricing" class="mob-link">Pricing</a>
+  <a href="#" data-page="contact" class="mob-link">Contact</a>
+</div>
+
+<!-- ══════════════════════════════════════════════════════════════
+     PAGE: HOME
+══════════════════════════════════════════════════════════════ -->
+<div class="page active" id="page-home">
+  <section class="hero">
+    <div class="hero-grid-bg"></div>
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+
+    <div class="wrap hero-content">
+      <div class="hero-badge">
+        <span class="badge-pulse"></span>
+        Custom Software Studio — India
+      </div>
+
+      <h1>
+        We build software<br>
+        <span class="line-2">that earns its keep.</span>
+      </h1>
+
+      <p class="hero-sub">
+        Three shipped products. Real clients. Gym management, dairy logistics, school ERP — all built from scratch, built to last. Your industry is next.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#" class="btn-primary" data-page="work">
+          See live demos
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#" class="btn-outline" data-page="contact">Talk to us</a>
+      </div>
+
+      <div class="hero-stats">
+        <div>
+          <div class="h-stat-num" data-count="3">0</div>
+          <div class="h-stat-label">Shipped products</div>
+        </div>
+        <div>
+          <div class="h-stat-num" data-count="100">0</div>
+          <div class="h-stat-label">% custom built</div>
+        </div>
+        <div>
+          <div class="h-stat-num" data-count="0" data-text="₹0 templates">₹0 templates</div>
+          <div class="h-stat-label">Used in production</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-cue">
+      <div class="scroll-line"></div>
+      <span class="scroll-label">scroll</span>
+    </div>
+  </section>
+
+  <!-- PREVIEW STRIP -->
+  <section style="padding: 0 0 100px; background: var(--bg);">
+    <div class="wrap">
+      <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:2px; background:var(--border); border-radius:16px; overflow:hidden;" class="stagger">
+        <!-- Card 1 -->
+        <div style="background:var(--surface); padding:36px 32px; cursor:pointer; transition:background 0.2s;" class="home-proj-card" data-page="work" data-proj="gym" onmouseenter="this.style.background='var(--surface-2)'" onmouseleave="this.style.background='var(--surface)'">
+          <div style="font-size:var(--t-xs); font-weight:700; text-transform:uppercase; letter-spacing:0.1em; color:var(--blue); margin-bottom:14px;">01 — Fitness SaaS</div>
+          <h3 style="font-size:var(--t-lg); font-weight:700; letter-spacing:-0.025em; margin-bottom:12px;">GMG Gym Platform</h3>
+          <p style="font-size:var(--t-sm); color:var(--muted); line-height:1.65; margin-bottom:24px;">Multi-role gym management with owner analytics, trainer schedules, and member portals — built on React and Firebase.</p>
+          <div style="display:flex; align-items:center; gap:6px; font-size:var(--t-xs); color:var(--blue); font-weight:600;">
+            View simulator
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div style="background:var(--surface); padding:36px 32px; cursor:pointer; transition:background 0.2s;" class="home-proj-card" data-page="work" data-proj="dairy" onmouseenter="this.style.background='var(--surface-2)'" onmouseleave="this.style.background='var(--surface)'">
+          <div style="font-size:var(--t-xs); font-weight:700; text-transform:uppercase; letter-spacing:0.1em; color:var(--blue); margin-bottom:14px;">02 — Logistics</div>
+          <h3 style="font-size:var(--t-lg); font-weight:700; letter-spacing:-0.025em; margin-bottom:12px;">DairyFlow</h3>
+          <p style="font-size:var(--t-sm); color:var(--muted); line-height:1.65; margin-bottom:24px;">Swipe-to-log field deliveries, automatic WhatsApp billing, and live owner dashboard — all running in the browser.</p>
+          <div style="display:flex; align-items:center; gap:6px; font-size:var(--t-xs); color:var(--blue); font-weight:600;">
+            View simulator
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div style="background:var(--surface); padding:36px 32px; cursor:pointer; transition:background 0.2s;" class="home-proj-card" data-page="work" data-proj="erp" onmouseenter="this.style.background='var(--surface-2)'" onmouseleave="this.style.background='var(--surface)'">
+          <div style="font-size:var(--t-xs); font-weight:700; text-transform:uppercase; letter-spacing:0.1em; color:var(--blue); margin-bottom:14px;">03 — School ERP</div>
+          <h3 style="font-size:var(--t-lg); font-weight:700; letter-spacing:-0.025em; margin-bottom:12px;">EduSuite ERP</h3>
+          <p style="font-size:var(--t-sm); color:var(--muted); line-height:1.65; margin-bottom:24px;">A full school management system powered by Google Apps Script and Sheets. Zero hosting cost, works on every device.</p>
+          <div style="display:flex; align-items:center; gap:6px; font-size:var(--t-xs); color:var(--blue); font-weight:600;">
+            View simulator
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+
+<!-- ══════════════════════════════════════════════════════════════
+     PAGE: SERVICES
+══════════════════════════════════════════════════════════════ -->
+<div class="page" id="page-services">
+  <div class="wrap">
+    <div class="page-hero">
+      <div class="page-eyebrow"><span></span>What we build</div>
+      <h1 class="page-title">Software that fits the way<br>your business actually works</h1>
+      <p class="page-sub">No templates, no out-of-the-box tools with half the features you need. We build it from scratch around your specific operation.</p>
+    </div>
+
+    <div class="svc-list stagger">
+      <div class="svc-item">
+        <span class="svc-item-num">01</span>
+        <div class="svc-item-body">
+          <h3>Web Applications & SaaS Platforms</h3>
+          <p>Multi-role web apps with real-time data, custom dashboards, and everything from user authentication to payment tracking. Built on React, Vite, and Firebase — deployed to Firebase Hosting for near-zero cost at scale.</p>
+        </div>
+        <div class="svc-item-tags">
+          <span class="tag">React 18/19</span>
+          <span class="tag">Firebase</span>
+          <span class="tag">Firestore</span>
+          <span class="tag">Multi-role auth</span>
+        </div>
+      </div>
+
+      <div class="svc-item">
+        <span class="svc-item-num">02</span>
+        <div class="svc-item-body">
+          <h3>Field Operations & Logistics Tools</h3>
+          <p>Mobile-first apps for people working in the field — delivery agents, technicians, inspectors. Swipe-to-update workflows, offline caching, and automated WhatsApp or SMS billing so nothing needs to be done twice.</p>
+        </div>
+        <div class="svc-item-tags">
+          <span class="tag">Framer Motion</span>
+          <span class="tag">WhatsApp API</span>
+          <span class="tag">SMS dispatch</span>
+          <span class="tag">PWA-ready</span>
+        </div>
+      </div>
+
+      <div class="svc-item">
+        <span class="svc-item-num">03</span>
+        <div class="svc-item-body">
+          <h3>Google Workspace Automation & ERPs</h3>
+          <p>Full enterprise systems built inside Google Apps Script — your data lives in Sheets, your staff logs in via a clean web portal, and your admin generates invoices and reports with one click. Zero server cost ever.</p>
+        </div>
+        <div class="svc-item-tags">
+          <span class="tag">Apps Script</span>
+          <span class="tag">Google Sheets</span>
+          <span class="tag">Google Drive</span>
+          <span class="tag">PDF automation</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tech grid -->
+    <div class="tech-section">
+      <div class="tech-section-title">Technology we work with</div>
+      <div class="tech-grid stagger">
+        <div class="tech-cell">
+          <svg class="tech-cell-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/><path d="M2 12h20"/></svg>
+          <div class="tech-cell-name">React 18 / 19</div>
+          <div class="tech-cell-desc">Component-driven frontends with hooks, routing, and real-time state management</div>
+        </div>
+        <div class="tech-cell">
+          <svg class="tech-cell-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+          <div class="tech-cell-name">Firebase & Firestore</div>
+          <div class="tech-cell-desc">Auth, real-time database, and hosting — all from one platform</div>
+        </div>
+        <div class="tech-cell">
+          <svg class="tech-cell-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+          <div class="tech-cell-name">Google Apps Script</div>
+          <div class="tech-cell-desc">Enterprise automation and Sheets-backed ERP systems at zero hosting cost</div>
+        </div>
+        <div class="tech-cell">
+          <svg class="tech-cell-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="12 2 2 22 22 22"/></svg>
+          <div class="tech-cell-name">Vite</div>
+          <div class="tech-cell-desc">Blazing-fast dev builds and sub-second HMR for clean development</div>
+        </div>
+        <div class="tech-cell">
+          <svg class="tech-cell-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.9 13.5 19.79 19.79 0 0 1 1.82 4.87 2 2 0 0 1 3.8 2.7h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l.91-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <div class="tech-cell-name">WhatsApp & SMS</div>
+          <div class="tech-cell-desc">Automated client notifications and billing messages direct from the app</div>
+        </div>
+        <div class="tech-cell">
+          <svg class="tech-cell-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+          <div class="tech-cell-name">Google Sheets DB</div>
+          <div class="tech-cell-desc">Production database for ERPs when zero infrastructure overhead is the goal</div>
+        </div>
+        <div class="tech-cell">
+          <svg class="tech-cell-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          <div class="tech-cell-name">Framer Motion</div>
+          <div class="tech-cell-desc">Fluid animations and gesture-driven mobile interactions</div>
+        </div>
+        <div class="tech-cell">
+          <svg class="tech-cell-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          <div class="tech-cell-name">Role-Based Auth</div>
+          <div class="tech-cell-desc">Per-user access control with scoped Firestore security rules</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ══════════════════════════════════════════════════════════════
+     PAGE: WORK
+══════════════════════════════════════════════════════════════ -->
+<div class="page" id="page-work">
+  <div class="wrap">
+    <div class="page-hero">
+      <div class="page-eyebrow"><span></span>Interactive demos</div>
+      <h1 class="page-title">Three live products.<br>Try them right now.</h1>
+      <p class="page-sub">Each tab below is an interactive replica of the actual software. Switch roles, swipe cards, click around — it behaves exactly like the real app.</p>
+    </div>
+
+    <!-- Project Tabs -->
+    <div class="proj-tabs" role="tablist">
+      <button class="proj-tab-btn active" data-proj="gym">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6.5 6.5h11M6.5 17.5h11M3 10.5h18M3 13.5h18"/></svg>
+        Gym SaaS
+      </button>
+      <button class="proj-tab-btn" data-proj="dairy">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h9M20 18v-4a1 1 0 0 0-1-1h-3v5h4a1 1 0 0 0 1-1z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="16.5" cy="18.5" r="2.5"/></svg>
+        DairyFlow
+      </button>
+      <button class="proj-tab-btn" data-proj="erp">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+        School ERP
+      </button>
+    </div>
+
+    <!-- ─── GYM PANEL ─── -->
+    <div class="proj-panel active" id="proj-panel-gym">
+      <div class="proj-info">
+        <span class="proj-kicker">Fitness Management Platform</span>
+        <h2>GMG Fitness Studio App</h2>
+        <p>Multi-role gym SaaS with separate portals for the owner, each trainer, and every member. React 18, Firebase Auth, and Firestore powering live data across all three roles.</p>
+        <div class="proj-chips">
+          <span class="proj-chip">React 18</span>
+          <span class="proj-chip">Firebase Auth</span>
+          <span class="proj-chip">Firestore</span>
+          <span class="proj-chip">Tailwind</span>
+          <span class="proj-chip">React Router</span>
+        </div>
+        <ul class="proj-features">
+          <li>
+            <span class="pf-dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></span>
+            <div><strong>Three portals, one codebase.</strong> Owner sees revenue, trainer count, and member roster. Trainer gets their client list and daily sessions. Member books slots and tracks workouts.</div>
+          </li>
+          <li>
+            <span class="pf-dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></span>
+            <div><strong>Smart conflict checks.</strong> The system rejects bookings if a trainer is already occupied in that slot — no manual checking required.</div>
+          </li>
+          <li>
+            <span class="pf-dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></span>
+            <div><strong>Billing and inventory</strong> tracked in Firestore with paginated reads and role-scoped security rules.</div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="proj-display">
+        <div class="browser-mockup">
+          <div class="bm-bar">
+            <span class="bm-dot r"></span><span class="bm-dot y"></span><span class="bm-dot g"></span>
+            <span class="bm-url">gmgfitness.app</span>
+          </div>
+          <div class="bm-body">
+            <div class="gym-navbar">
+              <span class="gym-brand">GMG FITNESS</span>
+              <div class="gym-role-switch">
+                <button class="gr-btn active" data-role="owner">Owner</button>
+                <button class="gr-btn" data-role="trainer">Trainer</button>
+                <button class="gr-btn" data-role="member">Member</button>
+              </div>
+            </div>
+
+            <!-- Owner -->
+            <div class="gym-portal active" id="gp-owner">
+              <div class="gym-body">
+                <div class="gym-stats-row">
+                  <div class="gs"><div class="gs-label">Members</div><div class="gs-value blue">148</div></div>
+                  <div class="gs"><div class="gs-label">Trainers</div><div class="gs-value">8</div></div>
+                  <div class="gs"><div class="gs-label">Revenue</div><div class="gs-value green">₹2,84,500</div></div>
+                </div>
+                <div class="gym-table-card">
+                  <div class="gym-table-header"><span>Recent Members</span><a>+ Add Member</a></div>
+                  <table class="g-table">
+                    <thead><tr><th>Name</th><th>Plan</th><th>Status</th></tr></thead>
+                    <tbody>
+                      <tr><td>Rohan Sharma</td><td>Premium — 12mo</td><td><span class="gpill active">Active</span></td></tr>
+                      <tr><td>Simran Kaur</td><td>Cardio Monthly</td><td><span class="gpill active">Active</span></td></tr>
+                      <tr><td>Ajay Mehra</td><td>Weight Training</td><td><span class="gpill pending">Pending</span></td></tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+            <!-- Trainer -->
+            <div class="gym-portal" id="gp-trainer">
+              <div class="gym-body">
+                <div class="gym-stats-row">
+                  <div class="gs"><div class="gs-label">My Clients</div><div class="gs-value blue">12</div></div>
+                  <div class="gs"><div class="gs-label">Today</div><div class="gs-value">4 slots</div></div>
+                  <div class="gs"><div class="gs-label">Logs</div><div class="gs-value green">92%</div></div>
+                </div>
+                <div class="gym-conflict-banner">
+                  <strong>⚠ Conflict detected</strong>
+                  Slot 08:00 AM already booked by Rohan Sharma. Pick another time or trainer before confirming.
+                </div>
+              </div>
+            </div>
+
+            <!-- Member -->
+            <div class="gym-portal" id="gp-member">
+              <div class="gym-body">
+                <div class="gym-stats-row">
+                  <div class="gs"><div class="gs-label">My Plan</div><div class="gs-value blue" style="font-size:0.8rem;">Platinum</div></div>
+                  <div class="gs"><div class="gs-label">Days Left</div><div class="gs-value">248</div></div>
+                  <div class="gs"><div class="gs-label">Next</div><div class="gs-value green" style="font-size:0.72rem;">Legs</div></div>
+                </div>
+                <div class="gym-table-card" style="text-align:center; padding:20px 12px;">
+                  <p style="font-size:0.58rem; color:var(--muted); margin-bottom:12px;">Seat limit checked in Firestore before confirming your booking</p>
+                  <button style="background:var(--blue-2); border:none; color:white; font-size:0.65rem; font-weight:700; padding:8px 16px; border-radius:6px;">Book 07:00 PM →</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ─── DAIRY PANEL ─── -->
+    <div class="proj-panel" id="proj-panel-dairy">
+      <div class="proj-info">
+        <span class="proj-kicker">Field Logistics — Rural Operations</span>
+        <h2>DairyFlow Delivery Manager</h2>
+        <p>Mobile-first field app for dairy delivery agents. Drag a card right to log a delivery, adjust litres on the spot, and the app generates a complete WhatsApp billing message automatically.</p>
+        <div class="proj-chips">
+          <span class="proj-chip">React 19</span>
+          <span class="proj-chip">Vite</span>
+          <span class="proj-chip">Framer Motion</span>
+          <span class="proj-chip">Firebase</span>
+          <span class="proj-chip">WhatsApp API</span>
+        </div>
+        <ul class="proj-features">
+          <li>
+            <span class="pf-dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></span>
+            <div><strong>Swipe to record.</strong> Drag card right = delivered. Left = failed. Any phone, zero training needed.</div>
+          </li>
+          <li>
+            <span class="pf-dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></span>
+            <div><strong>Auto billing on month end.</strong> Total litres × rate = bill. WhatsApp message with UPI link generated and ready to send.</div>
+          </li>
+          <li>
+            <span class="pf-dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></span>
+            <div><strong>Owner dashboard</strong> sees route completion, per-agent stats, and collection summaries in real time.</div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="proj-display">
+        <div class="phone-mockup">
+          <div class="phone-notch"></div>
+          <div class="phone-screen">
+
+            <div class="dairy-header">
+              <h4>DairyFlow</h4>
+              <span class="live-dot"></span>
+            </div>
+
+            <div class="dairy-tabs-inner">
+              <button class="dt-btn active" id="dt-pending">Pending (1)</button>
+              <button class="dt-btn" id="dt-done">Done (0)</button>
+            </div>
+
+            <div class="swipe-zone">
+              <div class="swipe-wrap" id="swipeWrap">
+                <div class="swipe-bg ok" id="sOk">DELIVERED ✓</div>
+                <div class="swipe-bg fail" id="sFail">✗ FAILED</div>
+                <div class="swipe-crd" id="sCard">
+                  <div>
+                    <h5>Ramesh Kumar</h5>
+                    <p>Sector 14, Block A</p>
+                    <p class="swipe-rate">₹56.00 / litre</p>
+                  </div>
+                  <div class="qty-picker">
+                    <select id="dQty">
+                      <option>1.0 L</option>
+                      <option>1.5 L</option>
+                      <option>2.0 L</option>
+                      <option selected>2.5 L</option>
+                      <option>3.0 L</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <p class="swipe-hint-text">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                Drag the card right to mark delivered
+              </p>
+            </div>
+
+            <!-- WA Sheet -->
+            <div class="wa-sheet" id="waSheet">
+              <div class="wa-box">
+                <h6>Send billing update?</h6>
+                <p>2.5L logged for <strong>Ramesh Kumar.</strong> Notify via WhatsApp?</p>
+                <div class="wa-btns">
+                  <button class="wa-send" id="waSend">Send WhatsApp</button>
+                  <button class="wa-cancel" id="waSkip">Skip</button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ─── ERP PANEL ─── -->
+    <div class="proj-panel" id="proj-panel-erp">
+      <div class="proj-info">
+        <span class="proj-kicker">Enterprise Automation</span>
+        <h2>EduSuite School ERP</h2>
+        <p>Complete school management on top of Google Apps Script and Sheets. No server, no hosting bill. Admin, Principal, Accountant, Teacher, and Student each get their own portal — all running on Google's infrastructure.</p>
+        <div class="proj-chips">
+          <span class="proj-chip">Google Apps Script</span>
+          <span class="proj-chip">Google Sheets</span>
+          <span class="proj-chip">HTML5</span>
+          <span class="proj-chip">Google Drive</span>
+          <span class="proj-chip">PWA-ready</span>
+        </div>
+        <ul class="proj-features">
+          <li>
+            <span class="pf-dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></span>
+            <div><strong>₹0 hosting cost.</strong> Runs entirely inside Google's cloud. No server to manage or pay for, ever.</div>
+          </li>
+          <li>
+            <span class="pf-dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></span>
+            <div><strong>Five role portals.</strong> Admin, Principal, Accountant, Teacher, and Student each see a completely different interface after login.</div>
+          </li>
+          <li>
+            <span class="pf-dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></span>
+            <div><strong>Automated receipts.</strong> One click generates and saves fee receipts as PDFs directly to Google Drive.</div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="proj-display">
+        <div class="browser-mockup">
+          <div class="bm-bar">
+            <span class="bm-dot r"></span><span class="bm-dot y"></span><span class="bm-dot g"></span>
+            <span class="bm-url">script.google.com — EduSuite</span>
+          </div>
+          <div class="bm-body">
+            <div class="erp-topbar">
+              <span class="erp-brand-txt">EduSuite ERP</span>
+              <div class="erp-role-switch">
+                <button class="erb-btn active" data-erp="admin">Admin</button>
+                <button class="erb-btn" data-erp="accountant">Accounts</button>
+                <button class="erb-btn" data-erp="teacher">Teacher</button>
+              </div>
+            </div>
+
+            <div class="erp-body">
+              <!-- Admin -->
+              <div class="erp-portal active" id="ep-admin">
+                <div class="sheets-hd">
+                  <span>Sheets Sync Status</span>
+                  <span class="sheets-connected">
+                    <svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                    Connected
+                  </span>
+                </div>
+                <div class="sheets-info-bar">Live sheet: <code>Master_Student_DB</code> · 1,480 rows · Backup: today ✓</div>
+                <table class="e-table">
+                  <thead><tr><th>Metric</th><th>Value</th><th></th></tr></thead>
+                  <tbody>
+                    <tr><td>Total divisions</td><td>32</td><td class="e-good">Optimal</td></tr>
+                    <tr><td>Avg attendance</td><td>94.8%</td><td class="e-good">Good</td></tr>
+                    <tr><td>Active staff logins</td><td>42</td><td class="e-good">Live</td></tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <!-- Accountant -->
+              <div class="erp-portal" id="ep-accountant">
+                <div class="sheets-hd" style="margin-bottom:10px;">
+                  <span>Fee Ledger</span>
+                  <span style="font-size:0.5rem; color:var(--muted);">Sheet: <code style="color:#10b981;">Finance_Ledger</code></span>
+                </div>
+                <div class="fee-cards">
+                  <div class="fee-crd"><div class="fee-lbl">Collected</div><div class="fee-num">₹4,20,000</div></div>
+                  <div class="fee-crd"><div class="fee-lbl">Outstanding</div><div class="fee-num red">₹80,500</div></div>
+                </div>
+                <button class="erp-gen-btn">Generate fee receipts → Save to Drive</button>
+              </div>
+
+              <!-- Teacher -->
+              <div class="erp-portal" id="ep-teacher">
+                <div class="sheets-hd" style="margin-bottom:10px;"><span>Marks Entry — Class 10-A, Maths</span></div>
+                <table class="e-table">
+                  <thead><tr><th>Student</th><th>Term 1 / 50</th><th>Term 2 / 50</th></tr></thead>
+                  <tbody>
+                    <tr><td>Abhishek Sharma</td><td>42</td><td>45</td></tr>
+                    <tr><td>Meera Nair</td><td>48</td><td>49</td></tr>
+                    <tr><td>Rahul Mishra</td><td>39</td><td>41</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- ══════════════════════════════════════════════════════════════
+     PAGE: PRICING
+══════════════════════════════════════════════════════════════ -->
+<div class="page" id="page-pricing">
+  <div class="wrap">
+    <div class="page-hero">
+      <div class="page-eyebrow"><span></span>Budget guide</div>
+      <h1 class="page-title">What does it cost to build<br>what you have in mind?</h1>
+      <p class="page-sub">Configure what you need below and get an instant ballpark. We'll follow up with a proper scoped quote once we understand your specific situation.</p>
+    </div>
+
+    <div class="pricing-grid">
+      <div class="pricing-left">
+        <h3>Configure your project</h3>
+
+        <div class="est-grp">
+          <span class="est-grp-label">Platform type</span>
+          <div class="est-opts">
+            <label class="est-option on" id="eopt-web">
+              <input type="radio" name="platform" value="web" checked>
+              <div><div class="est-opt-title">Single web app</div><div class="est-opt-desc">One dashboard for one team</div></div>
+            </label>
+            <label class="est-option" id="eopt-multi">
+              <input type="radio" name="platform" value="multi">
+              <div><div class="est-opt-title">Multi-role portal</div><div class="est-opt-desc">Separate views per user type</div></div>
+            </label>
+          </div>
+        </div>
+
+        <div class="est-grp">
+          <span class="est-grp-label">Add-ons needed</span>
+          <div class="est-opts">
+            <label class="est-option" id="eopt-auth">
+              <input type="checkbox" id="e-auth">
+              <div><div class="est-opt-title">User accounts</div><div class="est-opt-desc">Firebase Auth login system</div></div>
+            </label>
+            <label class="est-option" id="eopt-db">
+              <input type="checkbox" id="e-db">
+              <div><div class="est-opt-title">Real-time database</div><div class="est-opt-desc">Firestore live sync</div></div>
+            </label>
+            <label class="est-option" id="eopt-wa">
+              <input type="checkbox" id="e-wa">
+              <div><div class="est-opt-title">WhatsApp / SMS</div><div class="est-opt-desc">Automated notifications</div></div>
+            </label>
+            <label class="est-option" id="eopt-sheets">
+              <input type="checkbox" id="e-sheets">
+              <div><div class="est-opt-title">Sheets ERP</div><div class="est-opt-desc">Google Sheets as database</div></div>
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <div class="pricing-right">
+        <div class="pr-label">Estimated cost</div>
+        <div class="pr-price" id="prPrice">₹45k – ₹65k</div>
+        <div class="pr-timeline" id="prTime">2 – 3 weeks delivery</div>
+        <a href="#" class="pr-cta" data-page="contact" id="prCta">Request a custom quote →</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ══════════════════════════════════════════════════════════════
+     PAGE: CONTACT
+══════════════════════════════════════════════════════════════ -->
+<div class="page" id="page-contact">
+  <div class="wrap">
+    <div class="page-hero" style="padding-bottom:48px;">
+      <div class="page-eyebrow"><span></span>Get in touch</div>
+      <h1 class="page-title">Let's talk about<br>what you're building</h1>
+      <p class="page-sub">We read every message and reply within 24 hours — usually much faster. No sales calls, no pressure. Just a conversation about your problem.</p>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="c-items">
+          <div class="c-row">
+            <div class="c-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.9 13.5 19.79 19.79 0 0 1 1.82 4.87 2 2 0 0 1 3.8 2.7h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l.91-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <div class="c-text">
+              <span>Call us</span>
+              <a href="tel:+919876543210">+91 98765 43210</a>
+            </div>
+          </div>
+          <div class="c-row">
+            <div class="c-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div class="c-text">
+              <span>Email</span>
+              <a href="mailto:hello@gmgsoftware.in">hello@gmgsoftware.in</a>
+            </div>
+          </div>
+          <div class="c-row">
+            <div class="c-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div class="c-text">
+              <span>Location</span>
+              <p>India — working with clients nationwide</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <form class="contact-form" id="contactForm">
+        <div class="cf-row">
+          <div class="cf-field">
+            <label for="cfName">Your name</label>
+            <input type="text" id="cfName" placeholder="Amit Sharma" required>
+          </div>
+          <div class="cf-field">
+            <label for="cfCompany">Company</label>
+            <input type="text" id="cfCompany" placeholder="Optional">
+          </div>
+        </div>
+        <div class="cf-field">
+          <label for="cfEmail">Email</label>
+          <input type="email" id="cfEmail" placeholder="you@company.com" required>
+        </div>
+        <div class="cf-field">
+          <label for="cfMsg">What are you building?</label>
+          <textarea id="cfMsg" placeholder="Describe the problem or idea. Even rough is fine — we'll help you shape it." required></textarea>
+        </div>
+        <button type="submit" class="cf-submit" id="cfBtn">Send message</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+<!-- ══════════════ FOOTER (shown on all pages) ══════════════ -->
+<footer class="site-footer" id="siteFooter">
+  <div class="wrap">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="#" data-page="home" style="display:flex; align-items:center; gap:10px;">
+          <svg width="28" height="28" viewBox="0 0 40 40" fill="none">
+            <polygon points="20,4 20,22 4,34" fill="#1d4ed8"/>
+            <polygon points="20,4 36,34 20,22" fill="#5b21b6"/>
+            <polygon points="20,22 36,34 4,34" fill="#475569" opacity="0.5"/>
+            <circle cx="20" cy="22" r="2.5" fill="white"/>
+          </svg>
+          <span style="font-family:var(--f-head); font-weight:700; color:var(--white); font-size:var(--t-md); letter-spacing:-0.02em;">GMG Software Solution</span>
+        </a>
+        <p>Custom software for businesses that need it to actually work the way they operate.</p>
+      </div>
+      <nav class="footer-nav">
+        <div class="footer-col">
+          <h5>Products</h5>
+          <ul>
+            <li><a href="#" data-page="work" data-proj="gym">Gym SaaS Platform</a></li>
+            <li><a href="#" data-page="work" data-proj="dairy">DairyFlow Logistics</a></li>
+            <li><a href="#" data-page="work" data-proj="erp">EduSuite School ERP</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Company</h5>
+          <ul>
+            <li><a href="#" data-page="services">Services</a></li>
+            <li><a href="#" data-page="pricing">Pricing</a></li>
+            <li><a href="#" data-page="contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2026 GMG Software Solution LLC. All rights reserved.</p>
+      <div class="footer-legal">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="index.js"></script>
+</body>
+</html>
